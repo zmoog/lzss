@@ -1,4 +1,4 @@
-package go_lzss
+package lzss
 
 // #cgo CFLAGS: -g -Wall
 // #include <stdlib.h>
