@@ -1,6 +1,8 @@
 package main
 
-import "github.com/zmoog/lzss/lzss"
+import (
+	"github.com/zmoog/lzss"
+)
 
 func main()  {
 	
