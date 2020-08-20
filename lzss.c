@@ -175,6 +175,10 @@ int encode_file(char const * in, char const * out)
 
 int decode_file(char const * in, char const * out)
 {
+    // reset counters
+    bit_buffer = 0, bit_mask = 128;
+    codecount = 0, textcount = 0;
+    
     infile = fopen(in, "rb");
     if (infile == NULL) return 0;
 
