@@ -107,9 +107,9 @@ void encode(void)
         }
     }
     flush_bit_buffer();
-    printf("text:  %ld bytes\n", textcount);
-    printf("code:  %ld bytes (%ld%%)\n",
-        codecount, (codecount * 100) / textcount);
+//    printf("text:  %ld bytes\n", textcount);
+//    printf("code:  %ld bytes (%ld%%)\n",
+//        codecount, (codecount * 100) / textcount);
 }
 
 int getbit(int n) /* get n bits */
@@ -178,7 +178,7 @@ int decode_file(char const * in, char const * out)
     // reset counters
     bit_buffer = 0, bit_mask = 128;
     codecount = 0, textcount = 0;
-    
+
     infile = fopen(in, "rb");
     if (infile == NULL) return 0;
 
